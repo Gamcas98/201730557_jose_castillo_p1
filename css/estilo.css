@@ -1,0 +1,84 @@
+.titulo{
+    color:tomato;
+    margin: auto;
+    text-align: center;
+ 
+
+    
+}
+.titulo2{
+    color:tomato;
+    margin: 20px;
+    text-align: center;
+
+    
+}
+
+#btnVAnalizar{
+    padding: 10px;
+    margin: 0 40px;
+}
+
+#btnAnalizar{
+    padding: 10px;
+}
+
+
+.analisis{
+    color:tomato;
+    margin: auto;
+    text-align: center;
+    
+}
+
+.info{
+    color: #004d61;
+    display: inline-block;
+    text-align: center;
+   margin: 10px 120px;
+}
+
+#correctas{
+    color:green;
+    padding: 10px;
+    margin: 10px 25px;
+
+}   
+#incorrectas{
+    color: red;
+    padding: 10px;
+    margin: 10px 25px;
+}
+.reporte{
+    display: flex;
+}
+
+.contenedor{
+    width: 80%;
+    padding: 10px;
+    display: block;
+    margin: auto;
+    border: 1px solid #f2eee0;
+  }
+
+  .contenedor2{
+    margin: 0 100px;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+  }
+  
+  
+.contenedorPrincipal{
+
+    padding: 50px;
+   
+    display: block;
+   
+  
+  }
+
+  #texto{
+      width: 30%;
+      padding: 10px;
+  }

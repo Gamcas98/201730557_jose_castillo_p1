@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="css/estilo.css">
+
+
+
+    <title>Principal</title>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#bd5d38">
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a style="margin-left: 500px; border: none" class="btn btn-outline-light" href="Datos.html">Datos
+                        Estudiante</a>
+                </li>
+                <li class="nav-item">
+                    <a style="margin-left: 100px; border: none" class="btn btn-outline-light" href="Diagramas.html">Ver Diagramas de
+                        Moore</a>
+                </li>
+
+
+
+            </ul>
+        </div>
+
+    </nav>
+
+
+
+    <header>
+        <section>
+            <h1 class="titulo">
+                <MARQUEE BEHAVIOR=ALTERNATE SCROLLAMOUNT=12>Analizador Lexico
+            </h1>
+            </MARQUEE>
+        </section>
+    </header>
+
+
+
+    <section>
+        <article class="contenedor">
+            <p class="info">Por favor seleccione un archivo de texto y haga click en obtener token para analizar el
+                archivo, si quiere iniciar de nuevo haga click en nuevo analisis.</p>
+            <h2 class="titulo2">Seleccion de archivo</h2>
+
+            <div class="custom-file">
+                <input type="file" class="custom-file-input" id="file-input">
+                <label class="custom-file-label" for="customFileLang">Seleccionar Archivo</label>
+            </div>
+
+            <h2 class="titulo2">Contenido del archivo</h2>
+            <textarea id="contenido-archivo" cols="160" rows="8" style="resize: none;"></textarea>
+
+            <div class="analisis">
+                <button onclick="procesarEntrada('contenido-archivo')" id="btnAnalizar">Analizar</button>
+
+                <button onclick="preguntar();" id="btnVAnalizar">Nuevo Analisis</button>
+            </div>
+<br><br>
+            <table class="table">
+                    <thead class="" style="background-color:#bd5d38">
+                      <tr>
+                        <th scope="col">Palabra Reservada</th>
+                        <th scope="col">Boolean</th>
+                        <th scope="col">Operador</th>
+                        <th scope="col">Agrupacion</th>
+                        <th scope="col">Signo</th>
+                        <th scope="col">Entero</th>
+                        <th scope="col">Flotante</th>
+                        <th scope="col">Identificador</th>
+                      </tr>
+                    </thead>
+                    <tbody id="tablita">
+                
+                    </tbody>
+                  </table>
+           
+                
+
+
+        </article>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="" >
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2019 Copyright:
+            <a href="https://www.facebook.com/joseGamcas" target="_blank">Jose Eduardo Castillo</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+
+    <script type="text/javascript" src="js/lectura.js"></script>
+    <script type="text/javascript" src="js/Analisis.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
